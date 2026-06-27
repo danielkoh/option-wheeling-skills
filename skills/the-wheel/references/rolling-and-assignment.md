@@ -35,8 +35,9 @@ underlying still holds) or closing the position outright at a loss are the clean
 
 **Rolling down** reduces your strike, which lowers assignment risk and lowers your maximum
 loss if the stock keeps falling, but also lowers the premium you can collect in future
-cycles. Rolling too far down on a deteriorating name gradually locks in an unfavorable
-cost basis.
+cycles. Rolling repeatedly on a deteriorating name still leaves you with a cost basis above
+the current market price — the cumulative credits collected rarely offset a large decline,
+and you've committed more capital and time in the process.
 
 **The trap: rolling indefinitely.** Rolling buys time, but it does not fix a broken thesis.
 If you roll a CSP on a stock that has declined 30% and then another 20%, you are extending
@@ -72,8 +73,8 @@ cost_basis = strike − premium_per_share
 
 For example: sold a $50 put for $1.50/share → cost basis = $48.50/share. If the stock is
 trading at $46 when assigned, you own shares that are $2.50 below your cost basis. That
-is a paper loss, but it is also $3.50 better than if you had simply bought the stock at
-$50 the day you sold the put.
+is a paper loss, but it is also $1.50 better (exactly the premium you collected) than if
+you had simply bought the stock at $50 the day you sold the put.
 
 **When assignment is fine.** If you sold the CSP on a name you genuinely wanted to own at
 or below the strike, assignment is the strategy working as designed. You now have a stock
@@ -116,8 +117,14 @@ and will face the same decision again.
 shares are sold at the strike. Your total return on the position is:
 
 ```
-total_return = (call_strike − cost_basis) + sum_of_all_premiums_collected
+total_return = (call_strike − CSP_strike) + total_premiums_collected
 ```
+
+where `CSP_strike` is the raw (original) put strike at which you were assigned, and
+`total_premiums_collected` is the sum of every premium received: the CSP premium collected
+when you opened the wheel plus every covered-call premium collected while holding the shares.
+Note that `CSP_strike` is the gross strike, not the reduced cost basis — using the raw strike
+here avoids double-counting the CSP premium that is already included in `total_premiums_collected`.
 
 This is the intended outcome of the wheel if the stock recovered to and past your cost
 basis. Evaluate it as a complete trade: did the annualized return on capital deployed make
