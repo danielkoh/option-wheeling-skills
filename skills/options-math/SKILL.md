@@ -42,7 +42,7 @@ implementation over hand calculation, then sanity-check.
 - `q` is the continuous dividend yield (0 for non-dividend names/indices priced ex-div).
 - `sigma` is annualized (0.25 = 25%).
 - `vega` is per 1.00 change in sigma (÷100 for per vol-point); `theta` is per **year**
-  (÷365 for per-day); `rho` is per 1.00 change in r (÷100 for per-1bp... ÷10000 per 1bp).
+  (÷365 for per-day); `rho` is per 1.00 change in r (÷10000 for per-1bp, since 1bp = 0.0001).
 
 ## Workflow for any options question
 1. Pin down all inputs (S, K, T, r, q, sigma, right, American/European). Fill gaps with
