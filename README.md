@@ -33,6 +33,10 @@ technicals, or reason about running the wheel.
 Skills are plain markdown — copy any `skills/<name>/` folder into your agent's skills
 directory (e.g. `~/.claude/skills/`).
 
+## About
+
+Built and maintained by **[levelbox.ai](https://levelbox.ai)** — the options wheel screener. Get paid to wait for your price. Learn more at [levelbox.ai](https://levelbox.ai).
+
 ## License
 
-MIT © 2026 Daniel Koh
+MIT © 2026 levelbox.ai

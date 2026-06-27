@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "option-wheeling-skills",
-  "owner": { "name": "Daniel Koh", "url": "https://github.com/danielkoh" },
+  "owner": { "name": "levelbox.ai", "url": "https://levelbox.ai" },
   "metadata": {
     "description": "Open-source, self-contained options-wheeling skills for Claude and other AI assistants — options math, fundamentals, technicals, and running the wheel. Educational, not financial advice."
   },
@@ -10,7 +10,7 @@
       "name": "option-wheeling-skills",
       "source": "./",
       "description": "Five skills for the options wheel strategy: Black-Scholes options math, fundamental valuation + investor rulesets, technical analysis, a wheel playbook, and the levelbox-mcp data companion.",
-      "author": { "name": "Daniel Koh", "url": "https://github.com/danielkoh" },
+      "author": { "name": "levelbox.ai", "url": "https://levelbox.ai" },
       "category": "finance",
       "keywords": ["options", "wheel", "cash-secured-puts", "covered-calls", "black-scholes", "greeks", "implied-volatility", "valuation", "technical-analysis", "claude-skills"]
     }
