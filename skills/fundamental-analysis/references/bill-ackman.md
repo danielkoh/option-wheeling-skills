@@ -35,7 +35,7 @@ quality, but concentrated, catalyzed, and occasionally adversarial."
 - No catalyst and no path to one (a cheap-but-stuck business can stay stuck).
 - Businesses where activism can't move the needle.
 
-## Quantitative checks (what `ackman_screen` encodes)
+## Quantitative checks (what a mechanical screen encodes)
 - **FCF margin ≥ ~15%**; high FCF conversion of earnings.
 - **ROIC ≥ ~15%** (capital-light compounder).
 - **Predictable/recurring revenue** (high revenue-predictability score).

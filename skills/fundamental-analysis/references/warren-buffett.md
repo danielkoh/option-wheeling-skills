@@ -26,7 +26,7 @@ moat + honest, able management + a sensible price.*
 6. **Long horizon.** "Our favorite holding period is forever." Let compounding work; minimize
    turnover, taxes, and frictional costs.
 
-## Quantitative checks (what `buffett_screen` encodes)
+## Quantitative checks (what a mechanical screen encodes)
 - **ROE ≥ ~15%** consistently (durable returns, not one good year).
 - **Gross margin ≥ ~40%** (proxy for pricing power) and stable/rising.
 - **Low leverage**: Debt/Equity ≤ ~0.5; comfortable interest coverage.

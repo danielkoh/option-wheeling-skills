@@ -40,7 +40,7 @@ price (GARP)**, found through everyday observation and verified in the financial
 - High P/E relative to growth (PEG ≫ 1); whisper/story stocks with no earnings.
 - Inventories piling up faster than sales; rising debt.
 
-## Quantitative checks (what `lynch_screen` encodes)
+## Quantitative checks (what a mechanical screen encodes)
 - **PEG < 1.0**.
 - **EPS growth ~15–30%** (fast but sustainable; >50% is rarely durable).
 - **Debt/Equity ≤ ~0.5**.

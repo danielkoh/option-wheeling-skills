@@ -73,7 +73,7 @@ Your assistant now has access to the levelbox screener:
 ## Troubleshooting
 
 - **401 "Not logged in"?** Run `levelbox-mcp login` to refresh credentials.
-- **Browser login fails with OAuth error?** Check that your Supabase project's **Auth > URL Configuration** allows `http://localhost:*` (email/password works without it).
+- **Browser login fails with OAuth error?** Make sure you completed the browser sign-in and that your system browser isn't blocking the localhost callback. Email/password login is an alternative. If it persists, re-run `levelbox-mcp login`.
 - **Not seeing tools?** Restart your AI assistant and verify the config block is in the right file.
 
 ## Env Vars

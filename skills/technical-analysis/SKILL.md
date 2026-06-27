@@ -17,7 +17,7 @@ description: >
 
 # Technical Analysis
 
-Reference for indicator math and price-action reading in this repo.
+Reference for indicator math and price-action reading in this skill.
 
 ## Stance (be honest)
 TA describes **supply/demand and crowd behavior in price**, not company value. Treat
