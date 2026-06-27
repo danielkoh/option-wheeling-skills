@@ -1,0 +1,10 @@
+{
+  "name": "option-wheeling-skills",
+  "version": "0.1.0",
+  "description": "Self-contained options-wheeling skills for Claude/AI assistants: options math, fundamentals + investor rulesets, technical analysis, a wheel playbook, and the levelbox-mcp data companion. Educational, not financial advice.",
+  "author": { "name": "Daniel Koh", "url": "https://github.com/danielkoh" },
+  "license": "MIT",
+  "homepage": "https://github.com/danielkoh/option-wheeling-skills",
+  "repository": "https://github.com/danielkoh/option-wheeling-skills",
+  "keywords": ["options", "wheel", "cash-secured-puts", "covered-calls", "black-scholes", "greeks", "implied-volatility", "valuation", "technical-analysis", "claude-skills"]
+}
