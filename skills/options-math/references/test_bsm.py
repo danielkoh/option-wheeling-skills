@@ -39,3 +39,9 @@ def test_implied_vol_roundtrips():
     target = price(right="call", **ARGS)
     iv = implied_vol(target, S=100.0, K=100.0, T=0.25, r=0.04, right="call", q=0.0)
     assert abs(iv - 0.20) < 1e-4
+
+
+def test_implied_vol_returns_nan_below_intrinsic():
+    # Deep ITM call: S=150, K=100 — intrinsic ≈ 51; target=5.0 is impossible.
+    iv = implied_vol(5.0, S=150.0, K=100.0, T=0.25, r=0.04, right="call", q=0.0)
+    assert math.isnan(iv), f"expected NaN for below-intrinsic target, got {iv}"

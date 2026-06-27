@@ -3,11 +3,12 @@
 ## What IV is
 The σ that makes the model price equal the observed market price. It's the market's
 forward-looking estimate of volatility — *the* most information-rich number on the chain.
-Solve it with `implied_vol()` (Newton-Raphson on vega, bisection fallback for the wings).
+Solve it with `implied_vol()` (bisection on σ — valid because BSM price is strictly
+increasing in σ, i.e. vega > 0 everywhere).
 
 ### Solving notes
-- No real solution below intrinsic value (function returns NaN) — the price is stale/wrong.
-- Newton can diverge for deep ITM/OTM (vega → 0); the bisection fallback handles those.
+- No real solution below intrinsic value (or above the high-vol ceiling); `implied_vol()`
+  returns `NaN` when `target_price` is outside the achievable range — the price is stale/wrong.
 - Use mid-price (½(bid+ask)); wide spreads make IV noisy — note the spread.
 
 ## Skew and smile (one σ does not fit all strikes)

@@ -5,7 +5,7 @@ description: >
   volatility, reasoning about the vol surface (skew/term structure), or analyzing
   the payoff and net risk of single- and multi-leg structures (spreads, straddles,
   strangles, butterflies, condors, calendars, collars, covered calls). Holds the
-  exact formulas, conventions, and the repo's pricing engine.
+  exact formulas, conventions, and a self-contained reference implementation (`references/bsm.py`).
 ---
 
 > ⚠️ **Not financial advice.** This skill is educational and analytical tooling only.

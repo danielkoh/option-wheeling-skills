@@ -4,10 +4,12 @@ Open-source, self-contained **options-wheeling skills** for Claude and other AI 
 Install once, then ask your assistant to price an option, value a company, read the
 technicals, or reason about running the wheel.
 
-> ⚠️ **Not financial advice.** These skills are educational and analytical tooling only.
-> They present math, valuation, scenarios, and risk — they never tell you to buy or sell.
-> Options carry substantial risk. Do your own due diligence; you are responsible for your
-> own decisions.
+> ⚠️ **Not financial advice.** This skill is educational and analytical tooling only.
+> It presents math, valuation, scenarios, and risk — it never recommends buying or
+> selling any security. Options carry substantial risk and are not suitable for all
+> investors; you can lose more than you collect in premium. Verify every number against
+> primary sources (filings, your broker, a data provider) and do your own due diligence.
+> You are solely responsible for your trading decisions.
 
 ## Skills
 

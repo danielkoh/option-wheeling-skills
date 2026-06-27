@@ -79,8 +79,16 @@ def greeks(S, K, T, r, sigma, right, q=0.0) -> dict:
 
 
 def implied_vol(target_price, S, K, T, r, right, q=0.0, lo=1e-6, hi=5.0, tol=1e-8, max_iter=200) -> float:
-    """Solve sigma by bisection so price() matches target_price."""
+    """Solve sigma by bisection so price() matches target_price.
+
+    Returns float('nan') when target_price is outside the achievable range
+    [price(lo), price(hi)] — e.g. below intrinsic value or above the high-vol ceiling.
+    """
     side = _norm_right(right)
+    price_lo = price(S, K, T, r, lo, side, q)
+    price_hi = price(S, K, T, r, hi, side, q)
+    if target_price < price_lo - tol or target_price > price_hi + tol:
+        return float("nan")
     for _ in range(max_iter):
         mid = 0.5 * (lo + hi)
         diff = price(S, K, T, r, mid, side, q) - target_price
