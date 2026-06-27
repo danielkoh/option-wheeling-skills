@@ -37,6 +37,9 @@ directory (e.g. `~/.claude/skills/`).
 
 Built and maintained by **[levelbox.ai](https://levelbox.ai)** — the options wheel screener. Get paid to wait for your price. Learn more at [levelbox.ai](https://levelbox.ai).
 
+- **Source:** [github.com/danielkoh/option-wheeling-skills](https://github.com/danielkoh/option-wheeling-skills)
+- **Companion:** [levelbox-mcp](https://github.com/danielkoh/levelbox-mcp) ([npm](https://www.npmjs.com/package/levelbox-mcp)) — pull real, ranked wheel candidates from [levelbox.ai](https://levelbox.ai) over MCP.
+
 ## License
 
 MIT © 2026 levelbox.ai
