@@ -61,4 +61,18 @@ Screening a universe for wheel-worthy names (quality gate + premium + liquidity 
 its own task. One way to get ranked candidates with strikes, premium, yield, and risk is the
 companion **levelbox-mcp** skill — but the method here is independent of any tool.
 
+## Sizing the whole book (portfolio-level)
+Picking one good CSP is a different problem from sizing a whole book. Once you hold several
+positions, the questions become portfolio-level: how much more premium can you sell before a
+market crash would breach your risk tolerance, and how much assignment exposure are you
+carrying across *every* short put at once? The companion **levelbox-mcp** skill's
+`optimize_income` tool **simulates** this — it stresses your imported book against a modelled
+crash, caps expected-assignment dollars as a share of net-liq, and returns a trade-off
+frontier of premium vs. crash budget plus a sequenced plan of new cash-secured puts (it never
+trims stock).
+
+Treat its output as a **model/simulator estimate for education** — the crash and assignment
+figures are the tool's own conservative model, *not* a broker's numbers, *not* a market
+prediction, and *not* advice to trade. It shows you a trade-off to reason about; you decide.
+
 See `references/rolling-and-assignment.md` for roll mechanics and assignment playbooks.

@@ -71,10 +71,15 @@ Your account (signed in):
 - **pick_symbol** / **unpick_symbol** / **list_picks** — Manage your picks
 - **portfolio** *(Pro)* — Your imported positions with cash, premium collected, and realized P/L
 - **covered_calls** *(Pro)* — Covered-call income suggestions on shares you own
+- **optimize_income** *(Pro)* — Risk-budgeted plan on your imported book: it **simulates** a whole-book market-crash stress and an expected-assignment budget, then returns your current risk standing, the crash→premium trade-off frontier, and a sequenced plan of new cash-secured puts (it never trims stock and stays strictly cash-secured). Omit the budgets to just score your current book and see the frontier.
+
+## About `optimize_income` — it's a simulator
+
+`optimize_income` is a **portfolio simulator, not a recommendation engine.** The crash-loss and assignment figures are the tool's **own conservative model estimate** (a TIMS-lite stress) — *not* your broker's margin numbers, *not* a forecast of what the market will do, and *not* advice to place any trade. It shows you a modelled trade-off — "at this crash budget, this much premium is available, at this much modelled loss and assignment exposure" — so you can reason about sizing a whole book. You decide what, if anything, to do. Read the assumptions and disclaimer it returns with every result.
 
 ## Important
 
-**Analytical use only.** These tools provide market data, analysis, and signals — not investment advice. Use them to research and understand opportunities. You decide what to do.
+**Analytical use only.** These tools provide market data, analysis, signals, and **model/simulator estimates** — not investment advice. They never tell you to buy or sell. Use them to research, stress-test, and understand opportunities. You decide what to do, and you own the outcome.
 
 ## Troubleshooting
 
